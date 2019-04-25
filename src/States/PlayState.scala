@@ -247,7 +247,7 @@ class PlayState(gsm: GameStateManager) extends State(gsm){
     if(this.timePassed >= this.enemyTimer && this.allCharacters.filter(_.isEnemy).size < this.enemyWaveSize){
       this.enemyTimer += 1 + random.nextInt(this.frequency)               // Earliest time next enemy can be brought.
       val rng = random.nextInt(100)
-      val row = probabilitiesFile(currentRow).split(",")
+      val row = this.probabilities(this.currentRow).split(",")
       try{
         if(rng >= 0 && rng < row(0).toInt){
           this.allCharacters += new Swordsman(true, this.allCharacters, this.allProjectiles)
