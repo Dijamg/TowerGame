@@ -1,0 +1,12 @@
+
+stand4.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+3
+  rotate: false
+  xy: 1, 1
+  size: 35, 90
+  orig: 35, 90
+  offset: 0, 0
+  index: -1

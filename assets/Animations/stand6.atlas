@@ -1,0 +1,12 @@
+
+stand6.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+8
+  rotate: false
+  xy: 1, 1
+  size: 49, 90
+  orig: 49, 90
+  offset: 0, 0
+  index: -1
