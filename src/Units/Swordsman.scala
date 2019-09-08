@@ -43,7 +43,7 @@ class Swordsman(isEnemy: Boolean, allCharacters: Buffer[Character],allProjectile
   
   /* This method is called every frame by the PlayState's main loop.
    * Every frame, the character checks its front. If nobody is there, character advances,
-   *otherwise stands still. If enemy is in from character joins combat. Lastly it checks if it has been hit.
+   *otherwise stands still. If enemy is in front, character joins combat. Lastly it checks if it has been hit.
    */
   def update(dt: Float): Unit = {
     this.advance()
@@ -87,7 +87,7 @@ class Swordsman(isEnemy: Boolean, allCharacters: Buffer[Character],allProjectile
     }
   }
   
-  /*Takes damage when a projectile collides with it and removed the projectile.
+  /*Takes damage when a projectile collides with it and removes the projectile.
    * If projectile is an explosive one, 3 new explosion projectiles are brought to the game.
    */
   private def getHit(projectile: Projectile){
